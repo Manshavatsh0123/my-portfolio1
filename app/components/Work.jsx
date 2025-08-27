@@ -4,7 +4,7 @@ import React from 'react'
 
 const Work = () => {
     return (
-        <div id='work' className='w-full px-[12%] py-10 scroll-mt-20'>
+        <div id='projects' className='w-full px-[12%] py-10 scroll-mt-20'>
             <h1 className="text-center text-3xl sm:text-4xl font-bold Ovo text-gray-900 mb-4">
                 My Portfolio
             </h1>
