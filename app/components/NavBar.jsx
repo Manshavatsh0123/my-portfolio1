@@ -1,11 +1,18 @@
 import { assets } from '@/assets/assets'
 import Image from 'next/image'
-import React from 'react'
+import React, { useRef } from 'react'
 
 
 
 
 const NavBar = () => {
+    const sideMenuRef = useRef();
+    const openSideMenu = () => {
+        sideMenuRef.current.classList.remove('translate-x-full');
+    }
+    const closeSideMenu = () => {
+        sideMenuRef.current.classList.add('translate-x-full');
+    }
     return (
         <>
             <div className='fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%]'>
@@ -22,18 +29,65 @@ const NavBar = () => {
                 </div>
 
 
-                <ul className='hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50 '>
-                    <li><a className='text-black hover:text-gray-700' href="#top">Home</a></li>
-                    <li><a className='text-black hover:text-gray-700' href="#about">About</a></li>
-                    <li><a className='text-black hover:text-gray-700' href="#skills">Skills</a></li>
-                    <li><a className='text-black hover:text-gray-700' href="#experience">Experience</a></li>
-                    <li><a className='text-black hover:text-gray-700' href="#projects">Projects</a></li>
-                    <li><a className='text-black hover:text-gray-700' href="#contact">Contact</a></li>
+                <ul className="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50">
+                    <li><a className="text-black hover:text-gray-700 Ovo" href="#top">Home</a></li>
+                    <li><a className="text-black hover:text-gray-700 Ovo" href="#about">About</a></li>
+                    <li><a className="text-black hover:text-gray-700 Ovo" href="#skills">Skills</a></li>
+                    <li><a className="text-black hover:text-gray-700 Ovo" href="#experience">Experience</a></li>
+                    <li><a className="text-black hover:text-gray-700 Ovo" href="#projects">Projects</a></li>
+                    <li><a className="text-black hover:text-gray-700 Ovo" href="#contact">Contact</a></li>
                 </ul>
 
                 <div>
-                    <a href="#contact" className=' hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4'>Contact <Image src={assets.arrow_icon} className='w-3' alt="Arrow Icon" /></a>
+                    <a href="#contact" className=' hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4 Ovo'>Contact <Image src={assets.arrow_icon} className='w-3' alt="Arrow Icon" /></a>
+
+                    <button onClick={openSideMenu} className='block md:hidden'>
+                        <Image src={assets.menu_black} className='w-6' alt="Menu Icon" />
+                    </button>
                 </div>
+
+                {/*-----Mobile Menu-----*/}
+
+                <ul ref={sideMenuRef} className="flex md:hidden flex-col gap-6 py-24 px-8 fixed top-0 right-0 w-64 h-screen z-50 
+                    bg-gradient-to-b from-white via-rose-50 to-rose-100 shadow-2xl 
+                    transform translate-x-full transition-transform duration-500 ease-in-out">
+
+
+                    <button onClick={closeSideMenu} className="absolute top-5 right-5 text-gray-600 hover:text-black text-2xl font-bold">
+                        ✕
+                    </button>
+
+                    <li>
+                        <a className="block px-4 py-3 rounded-xl text-lg  text-gray-800 Ovo" href="#top">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a className="block px-4 py-3 rounded-xl text-lg  text-gray-800 Ovo" href="#about">
+                            About
+                        </a>
+                    </li>
+                    <li>
+                        <a className="block px-4 py-3 rounded-xl text-lg  text-gray-800 Ovo" href="#skills">
+                            Skills
+                        </a>
+                    </li>
+                    <li>
+                        <a className="block px-4 py-3 rounded-xl text-lg  text-gray-800 Ovo" href="#experience">
+                            Experience
+                        </a>
+                    </li>
+                    <li>
+                        <a className="block px-4 py-3 rounded-xl text-lg  text-gray-800 Ovo" href="#projects">
+                            Projects
+                        </a>
+                    </li>
+                    <li>
+                        <a className="block px-4 py-3 rounded-xl text-lg  text-gray-800 Ovo" href="#contact">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
             </nav>
 
         </>
