@@ -1,11 +1,12 @@
 import { assets } from '@/assets/assets'
 import Image from 'next/image'
-import React, { useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 
 
 
 
 const NavBar = () => {
+    const[isScroll,setIsScroll] = useState(false);
     const sideMenuRef = useRef();
     const openSideMenu = () => {
         sideMenuRef.current.classList.remove('translate-x-full');
@@ -13,12 +14,21 @@ const NavBar = () => {
     const closeSideMenu = () => {
         sideMenuRef.current.classList.add('translate-x-full');
     }
+    useEffect(() => {
+     window.addEventListener('scroll', () => {
+         if (window.scrollY > 50) {
+                setIsScroll(true);
+         } else {
+             setIsScroll(false);
+         }
+     });
+    },[])
     return (
         <>
             <div className='fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%]'>
                 <Image src={assets.header_bg_color} alt="Blur Effect" className='w-full' />
             </div>
-            <nav className='w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50'>
+            <nav className={`w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50 ${isScroll ? 'bg-white/70 backdrop-blur-lg shadow-sm' : ''}`}>
                 <div className="flex items-center space-x-3">
                     <div className="w-12 h-12 bg-black rounded-full flex items-center justify-center">
                         <span className="text-white text-lg font-bold">M</span>
@@ -29,7 +39,7 @@ const NavBar = () => {
                 </div>
 
 
-                <ul className="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50">
+                <ul className={`hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3  ${isScroll ? '' : 'bg-white/70 shadow-sm backdrop-blur-lg'}`}>
                     <li><a className="text-black hover:text-gray-700 Ovo" href="#top">Home</a></li>
                     <li><a className="text-black hover:text-gray-700 Ovo" href="#about">About</a></li>
                     <li><a className="text-black hover:text-gray-700 Ovo" href="#skills">Skills</a></li>
