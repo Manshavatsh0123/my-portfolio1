@@ -38,7 +38,11 @@ const NavBar = () => {
                     <li><a className="text-black hover:text-gray-700 Ovo" href="#contact">Contact</a></li>
                 </ul>
 
-                <div>
+                <div className='flex items-center gap-4'>
+                   <button>
+                     <Image src={assets.moon_icon} className='w-6 ' alt="Moon Icon" />
+                   </button>
+
                     <a href="#contact" className=' hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4 Ovo'>Contact <Image src={assets.arrow_icon} className='w-3' alt="Arrow Icon" /></a>
 
                     <button onClick={openSideMenu} className='block md:hidden'>
@@ -58,32 +62,32 @@ const NavBar = () => {
                     </button>
 
                     <li>
-                        <a className="block px-4 py-3 rounded-xl text-lg  text-gray-800 Ovo" href="#top">
+                        <a className="block px-4 py-3 rounded-xl text-lg  text-gray-800 Ovo" href="#top" onClick={closeSideMenu}>
                             Home
                         </a>
                     </li>
                     <li>
-                        <a className="block px-4 py-3 rounded-xl text-lg  text-gray-800 Ovo" href="#about">
+                        <a className="block px-4 py-3 rounded-xl text-lg  text-gray-800 Ovo" href="#about" onClick={closeSideMenu}>
                             About
                         </a>
                     </li>
                     <li>
-                        <a className="block px-4 py-3 rounded-xl text-lg  text-gray-800 Ovo" href="#skills">
+                        <a className="block px-4 py-3 rounded-xl text-lg  text-gray-800 Ovo" href="#skills" onClick={closeSideMenu}>
                             Skills
                         </a>
                     </li>
                     <li>
-                        <a className="block px-4 py-3 rounded-xl text-lg  text-gray-800 Ovo" href="#experience">
+                        <a className="block px-4 py-3 rounded-xl text-lg  text-gray-800 Ovo" href="#experience" onClick={closeSideMenu}>
                             Experience
                         </a>
                     </li>
                     <li>
-                        <a className="block px-4 py-3 rounded-xl text-lg  text-gray-800 Ovo" href="#projects">
+                        <a className="block px-4 py-3 rounded-xl text-lg  text-gray-800 Ovo" href="#projects" onClick={closeSideMenu}>
                             Projects
                         </a>
                     </li>
                     <li>
-                        <a className="block px-4 py-3 rounded-xl text-lg  text-gray-800 Ovo" href="#contact">
+                        <a className="block px-4 py-3 rounded-xl text-lg  text-gray-800 Ovo" href="#contact" onClick={closeSideMenu}>
                             Contact
                         </a>
                     </li>
