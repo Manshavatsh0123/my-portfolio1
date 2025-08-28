@@ -51,7 +51,7 @@ const skills = [
 
 const Skills = () => {
     return (
-        <div id='skills' className="pt-20 pb-20 bg-white">
+        <div id='skills' className="scroll-mt-22 pt-10 pb-20 bg-gray-50">
             <h1
                 className="text-center text-3xl md:text-5xl font-bold text-gray-900 Ovo"
                 data-aos="fade-up"

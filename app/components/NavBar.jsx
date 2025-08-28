@@ -43,9 +43,8 @@ const NavBar = () => {
                     <li><a className="text-black hover:text-gray-700 Ovo" href="#top">Home</a></li>
                     <li><a className="text-black hover:text-gray-700 Ovo" href="#about">About</a></li>
                     <li><a className="text-black hover:text-gray-700 Ovo" href="#skills">Skills</a></li>
-                    <li><a className="text-black hover:text-gray-700 Ovo" href="#experience">Experience</a></li>
                     <li><a className="text-black hover:text-gray-700 Ovo" href="#projects">Projects</a></li>
-                    <li><a className="text-black hover:text-gray-700 Ovo" href="#contact">Contact</a></li>
+                    <li><a className="text-black hover:text-gray-700 Ovo" href="#experience">Experience</a></li>
                 </ul>
 
                 <div className='flex items-center gap-4'>

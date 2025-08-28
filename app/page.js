@@ -1,5 +1,7 @@
 'use client'
 import About from "./components/About";
+import Contact from "./components/Contact";
+import Experience from "./components/Experience";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import NavBar from "./components/NavBar";
@@ -14,6 +16,8 @@ export default function Home() {
       <About />
       <Skills />
       <Work />
+      <Experience />
+      <Contact />
       <Footer />
     </>
   );
