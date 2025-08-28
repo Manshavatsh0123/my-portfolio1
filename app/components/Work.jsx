@@ -61,7 +61,7 @@ const Work = () => {
 
             <div className="flex justify-center mt-6">
                 <a
-                    href="#"
+                    href="/work"
                     className="inline-flex items-center justify-center text-gray-700 text-sm font-medium px-4 py-2 border border-gray-400 rounded-md hover:text-white hover:bg-gray-800 transition-all duration-300 group"
                 >
                     View All Projects
