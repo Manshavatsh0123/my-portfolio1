@@ -1,6 +1,7 @@
 import { assets } from '@/assets/assets'
 import Image from 'next/image'
 import React from 'react'
+import { SiGithub, SiLinkedin } from 'react-icons/si'
 
 const Header = () => {
     return (

@@ -1,12 +1,13 @@
 import { assets } from '@/assets/assets'
 import Image from 'next/image'
 import React, { useEffect, useRef, useState } from 'react'
+import { SiGithub, SiLinkedin } from 'react-icons/si';
 
 
 
 
 const NavBar = () => {
-    const[isScroll,setIsScroll] = useState(false);
+    const [isScroll, setIsScroll] = useState(false);
     const sideMenuRef = useRef();
     const openSideMenu = () => {
         sideMenuRef.current.classList.remove('translate-x-full');
@@ -15,22 +16,32 @@ const NavBar = () => {
         sideMenuRef.current.classList.add('translate-x-full');
     }
     useEffect(() => {
-     window.addEventListener('scroll', () => {
-         if (window.scrollY > 50) {
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
                 setIsScroll(true);
-         } else {
-             setIsScroll(false);
-         }
-     });
-    },[])
+            } else {
+                setIsScroll(false);
+            }
+        });
+    }, [])
     return (
         <>
-            <div className='fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%]'>
-                <Image src={assets.header_bg_color} alt="Blur Effect" className='w-full' />
+            <div className="fixed top-0 right-0 w-full -z-10 translate-y-[-75%]">
+                <Image
+                    src={assets.header_bg_color}
+                    alt="Blur Effect"
+                    className="w-full object-cover"
+                />
             </div>
-            <nav className={`w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50 ${isScroll ? 'bg-white/70 backdrop-blur-lg shadow-sm' : ''}`}>
+
+            <nav
+                className={`w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50 transition-all duration-300 ${isScroll
+                    ? "bg-white/80 backdrop-blur-lg shadow-md"
+                    : "bg-transparent"
+                    }`}
+            >
                 <div className="flex items-center space-x-3">
-                    <div className="w-12 h-12 bg-black rounded-full flex items-center justify-center">
+                    <div className="w-12 h-12 bg-black rounded-full flex items-center justify-center shadow-md">
                         <span className="text-white text-lg font-bold">M</span>
                     </div>
                     <h1 className="text-2xl font-extrabold text-black tracking-wide">
@@ -38,26 +49,91 @@ const NavBar = () => {
                     </h1>
                 </div>
 
-
-                <ul className={`hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3  ${isScroll ? '' : 'bg-white/70 shadow-sm backdrop-blur-lg'}`}>
-                    <li><a className="text-black hover:text-gray-700 Ovo" href="#top">Home</a></li>
-                    <li><a className="text-black hover:text-gray-700 Ovo" href="#about">About</a></li>
-                    <li><a className="text-black hover:text-gray-700 Ovo" href="#skills">Skills</a></li>
-                    <li><a className="text-black hover:text-gray-700 Ovo" href="#projects">Projects</a></li>
-                    <li><a className="text-black hover:text-gray-700 Ovo" href="#experience">Experience</a></li>
+                <ul
+                    className={`hidden md:flex items-center gap-6 lg:gap-10 rounded-full px-10 py-2 transition-all duration-300 ${isScroll ? "bg-transparent" : "bg-white/70 shadow-sm backdrop-blur-md"
+                        }`}
+                >
+                    <li>
+                        <a
+                            className="text-gray-800 hover:text-black Ovo transition-colors"
+                            href="#top"
+                        >
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            className="text-gray-800 hover:text-black Ovo transition-colors"
+                            href="#about"
+                        >
+                            About
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            className="text-gray-800 hover:text-black Ovo transition-colors"
+                            href="#skills"
+                        >
+                            Skills
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            className="text-gray-800 hover:text-black Ovo transition-colors"
+                            href="#projects"
+                        >
+                            Projects
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            className="text-gray-800 hover:text-black Ovo transition-colors"
+                            href="#experience"
+                        >
+                            Experience
+                        </a>
+                    </li>
                 </ul>
 
-                <div className='flex items-center gap-4'>
-                   <button>
-                     <Image src={assets.moon_icon} className='w-6 ' alt="Moon Icon" />
-                   </button>
 
-                    <a href="#contact" className=' hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4 Ovo'>Contact <Image src={assets.arrow_icon} className='w-3' alt="Arrow Icon" /></a>
+                <div className="flex items-center gap-5">
+                    <a
+                        href="https://www.linkedin.com/in/mansha-vatsh88/"
+                        target="_blank"
+                        className="p-2 rounded-full hover:bg-gray-100 transition"
+                    >
+                        <SiLinkedin className="w-7 h-7 text-[#0A66C2]" />
+                    </a>
 
-                    <button onClick={openSideMenu} className='block md:hidden'>
-                        <Image src={assets.menu_black} className='w-6' alt="Menu Icon" />
+                    <a
+                        href="https://github.com/Manshavatsh0123?tab=repositories"
+                        target="_blank"
+                        className="p-2 rounded-full hover:bg-gray-100 transition"
+                    >
+                        <SiGithub className="w-7 h-7 text-black" />
+                    </a>
+
+                    <a
+                        href="#contact"
+                        className="hidden lg:flex items-center gap-2 px-8 py-2.5 border border-gray-400 rounded-full text-sm font-medium hover:bg-black hover:text-white transition"
+                    >
+                        Contact
+                        <Image
+                            src={assets.arrow_icon}
+                            className="w-3"
+                            alt="Arrow Icon"
+                        />
+                    </a>
+
+                    <button onClick={openSideMenu} className="block md:hidden">
+                        <Image
+                            src={assets.menu_black}
+                            className="w-7"
+                            alt="Menu Icon"
+                        />
                     </button>
                 </div>
+
 
                 {/*-----Mobile Menu-----*/}
 
@@ -102,7 +178,6 @@ const NavBar = () => {
                     </li>
                 </ul>
             </nav>
-
         </>
     )
 }

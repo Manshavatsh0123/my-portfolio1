@@ -1,7 +1,7 @@
 import { assets } from '@/assets/assets'
 import Image from 'next/image'
 import React from 'react'
-import { SiJavascript, SiNextdotjs, SiNodedotjs, SiReact } from 'react-icons/si'
+import { SiGithub, SiJavascript, SiNextdotjs, SiNodedotjs, SiReact } from 'react-icons/si'
 
 const page = () => {
   return (
@@ -36,6 +36,16 @@ const page = () => {
           • Easy and efficient navigation.{"\n"}
           • Tech Stack: Node.js , Express , EJS Templates.
         </p>
+        <a
+          href="https://github.com/Manshavatsh0123/WanderNest"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-6 inline-flex items-center gap-2 px-8 py-3 border rounded-full border-gray-500 text-gray-800 hover:bg-gray-900 hover:text-white transition text-base font-medium"
+        >
+          <SiGithub className="w-5 h-5" />
+          View on GitHub
+        </a>
+
       </div>
 
       <div className="bg-white backdrop-blur-md p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 max-w-3xl mx-auto mt-10">
@@ -59,6 +69,15 @@ const page = () => {
           • Responsive, user-friendly layout.{"\n"}
           • Tech Stack: Next.js , JavaScript , Tailwind CSS.
         </p>
+        <a
+          href="https://github.com/Manshavatsh0123/next-rental-app"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-6 inline-flex items-center gap-2 px-8 py-3 border rounded-full border-gray-500 text-gray-800 hover:bg-gray-900 hover:text-white transition text-base font-medium"
+        >
+          <SiGithub className="w-5 h-5" />
+          View on GitHub
+        </a>
 
       </div>
 
@@ -83,6 +102,15 @@ const page = () => {
           • Smooth React-based frontend.{"\n"}
           • Tech Stack: React.js, JavaScript, Tailwind CSS.
         </p>
+        <a
+          href="https://github.com/Manshavatsh0123/QuickStay"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-6 inline-flex items-center gap-2 px-8 py-3 border rounded-full border-gray-500 text-gray-800 hover:bg-gray-900 hover:text-white transition text-base font-medium"
+        >
+          <SiGithub className="w-5 h-5" />
+          View on GitHub
+        </a>
 
       </div>
 
@@ -107,6 +135,15 @@ const page = () => {
           • Ride confirmation flow.{"\n"}
           • Tech Stack: React.js, Express , Socket.io , MongoDB , Axios.
         </p>
+        <a
+          href="https://github.com/Manshavatsh0123/UberGo"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-6 inline-flex items-center gap-2 px-8 py-3 border rounded-full border-gray-500 text-gray-800 hover:bg-gray-900 hover:text-white transition text-base font-medium"
+        >
+          <SiGithub className="w-5 h-5" />
+          View on GitHub
+        </a>
 
       </div>
 
@@ -130,6 +167,15 @@ const page = () => {
           • Shopping cart functionality.{"\n"}
           • Tech Stack: React.js, JavaScript, Tailwind CSS.
         </p>
+        <a
+          href="https://github.com/Manshavatsh0123/ReactCart"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-6 inline-flex items-center gap-2 px-8 py-3 border rounded-full border-gray-500 text-gray-800 hover:bg-gray-900 hover:text-white transition text-base font-medium"
+        >
+          <SiGithub className="w-5 h-5" />
+          View on GitHub
+        </a>
 
       </div>
 
@@ -153,6 +199,16 @@ const page = () => {
           • Shopping cart functionality.{"\n"}
           • Tech Stack: HTML, CSS, JavaScript.
         </p>
+        <a
+          href="https://github.com/Manshavatsh0123/E-Commerce"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-6 inline-flex items-center gap-2 px-8 py-3 border rounded-full border-gray-500 text-gray-800 hover:bg-gray-900 hover:text-white transition text-base font-medium"
+        >
+          <SiGithub className="w-5 h-5" />
+          View on GitHub
+        </a>
+
       </div>
 
       <div className="bg-white backdrop-blur-md p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 max-w-3xl mx-auto mt-10">
@@ -176,6 +232,16 @@ const page = () => {
           • 90s-inspired UI design.{"\n"}
           • Tech Stack: HTML, CSS, JavaScript.
         </p>
+        <a
+          href="https://github.com/Manshavatsh0123/90s-Melody-Hub"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-6 inline-flex items-center gap-2 px-8 py-3 border rounded-full border-gray-500 text-gray-800 hover:bg-gray-900 hover:text-white transition text-base font-medium"
+        >
+          <SiGithub className="w-5 h-5" />
+          View on GitHub
+        </a>
+
       </div>
 
       <div className="bg-white backdrop-blur-md p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 max-w-3xl mx-auto mt-10">
@@ -199,8 +265,15 @@ const page = () => {
           • Playlist and song list layout.{"\n"}
           • Tech Stack: HTML, CSS, JavaScript.
         </p>
-
-
+        <a
+          href="https://github.com/Manshavatsh0123/Clone"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-6 inline-flex items-center gap-2 px-8 py-3 border rounded-full border-gray-500 text-gray-800 hover:bg-gray-900 hover:text-white transition text-base font-medium"
+        >
+          <SiGithub className="w-5 h-5" />
+          View on GitHub
+        </a>
       </div>
 
       <div className="flex justify-center mt-10">
@@ -212,8 +285,6 @@ const page = () => {
           <Image src={assets.arrow_icon} alt="Home" className="w-5" />
         </a>
       </div>
-
-
     </div>
   )
 }
