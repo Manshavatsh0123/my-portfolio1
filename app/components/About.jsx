@@ -21,14 +21,12 @@ const About = () => {
 
                 <div className='md:w-2/3 w-full'>
                     <p className="mb-4 max-w-2xl Ovo leading-relaxed text-gray-700">
-                        Hi, I’m <span className="font-semibold text-gray-900">Mansha Vatsh</span>, a student at
-                        <span className="font-semibold text-gray-900"> Gautam Buddha University</span> with a strong
-                        passion for building impactful digital solutions.
+                        Hi, I’m <span className="font-semibold text-gray-900">Mansha Vatsh</span>, currently studying at
+                        <span className="font-semibold text-gray-900"> Gautam Buddha University</span>.
 
                         I’ve explored the <span className="font-semibold">MERN stack</span> and created projects like
                         <span className="italic"> Wanderlust</span>, <span className="italic">QuickStay</span>, and
-                        <span className="italic"> UberGo</span>, each designed to solve real-world problems through
-                        technology.
+                        <span className="italic"> UberGo</span>.
 
                         During my internship at
                         <span className="font-semibold text-gray-900"> Concrete Software Solutions Pvt. Ltd.</span>,

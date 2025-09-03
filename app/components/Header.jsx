@@ -41,9 +41,9 @@ const Header = () => {
                     Contact Me
                     <Image src={assets.right_arrow_white} alt="Right Arrow" className='w-4' />
                 </a>
-                <a href="/Mansha_Vatsh.pdf" download className='px-8 py-2.5 border rounded-full border-gray-500 flex items-center gap-2 hover:bg-gray-100 transition text-sm sm:text-base'>
-                    My Resume
-                    <Image src={assets.download_icon} alt="Resume" className='w-4' />
+                <a href="#projects"  className='px-8 py-2.5 border rounded-full border-gray-500 flex items-center gap-2 hover:bg-gray-100 transition text-sm sm:text-base'>
+                    View My Work
+                    <Image src={assets.right_arrow_bold} alt="Resume" className='w-4' />
                 </a>
             </div>
         </div>

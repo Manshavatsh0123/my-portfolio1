@@ -58,7 +58,7 @@ const Skills = () => {
                 data-aos-delay="100"
                 data-aos-duration="800"
             >
-                Technical <span className="text-gray-900 Ovo">Skills</span>
+                My Tech Stack
             </h1>
 
             <p
@@ -66,8 +66,9 @@ const Skills = () => {
                 data-aos="fade-up"
                 data-aos-delay="200"
             >
-                Technologies and tools I use to design and build scalable, user-friendly applications.
+                Tools and technologies I use to build modern, scalable, and user-friendly web applications.
             </p>
+
 
             <div className="flex flex-wrap justify-center gap-6 mt-10 px-6">
                 {skills.map((skill, index) => (

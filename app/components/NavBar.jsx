@@ -1,7 +1,7 @@
 import { assets } from '@/assets/assets'
 import Image from 'next/image'
 import React, { useEffect, useRef, useState } from 'react'
-import { SiGithub, SiLinkedin } from 'react-icons/si';
+import { SiGithub, SiLeetcode, SiLinkedin } from 'react-icons/si';
 
 
 
@@ -111,6 +111,14 @@ const NavBar = () => {
                         className="p-2 rounded-full hover:bg-gray-100 transition"
                     >
                         <SiGithub className="w-7 h-7 text-black" />
+                    </a>
+
+                    <a
+                        href="https://leetcode.com/u/Mansha_vatsh9/"
+                        target="_blank"
+                        className="p-2 rounded-full hover:bg-gray-100 transition"
+                    >
+                        <SiLeetcode className="w-7 h-7 text-black" />
                     </a>
 
                     <a

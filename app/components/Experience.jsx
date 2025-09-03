@@ -1,3 +1,5 @@
+import { assets } from '@/assets/assets'
+import Image from 'next/image'
 import React from 'react'
 import { SiReact } from 'react-icons/si'
 
@@ -38,6 +40,15 @@ const Experience = () => {
 • Followed accessibility and performance best practices (Lighthouse, Web Vitals).\n
 • Tech Stack: React.js, Next.js, Tailwind CSS, Git.`}
         </p>
+        <a
+          href="/Letter of Exp_Mansha.pdf"
+          download
+          className="inline-flex items-center gap-2 px-6 py-2.5 rounded-xl border border-gray-500 text-gray-700 hover:bg-gray-100 hover:border-gray-700 transition-all text-sm sm:text-base font-medium shadow-sm mt-5"
+        >
+          <span>Download Experience Letter</span>
+          <Image src={assets.download_icon} alt="Download" className="w-4 h-4" />
+        </a>
+
 
       </div>
     </div>
