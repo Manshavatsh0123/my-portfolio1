@@ -4,7 +4,7 @@ import React from 'react'
 
 const Work = () => {
     return (
-        <div id="projects" className="w-full px-[12%] py-16 scroll-mt-20 mb-20">
+        <div id="projects" className="w-full px-[12%] py-16 scroll-mt-15 mb-10">
 
             <h1
                 className="text-center text-3xl md:text-5xl font-bold Ovo text-gray-900 mb-4"
@@ -71,7 +71,7 @@ const Work = () => {
             </div>
 
 
-            <div className="flex justify-center mt-6">
+            <div className="flex justify-center mt-2">
                 <a
                     href="/work"
                     className="inline-flex items-center justify-center text-gray-700 text-sm font-medium px-5 py-2.5 border border-gray-400 rounded-full hover:text-white hover:bg-gray-800 transition-all duration-300 group"

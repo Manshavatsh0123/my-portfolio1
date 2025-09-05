@@ -33,12 +33,12 @@ const Experience = () => {
 
         <p className="text-gray-700 text-sm sm:text-base whitespace-pre-line leading-relaxed">
           {`Completed a 6-month internship at Concrete Software Solutions Pvt. Ltd., working on the Let Us Nudge web platform, which helps restaurants manage tables, reduce wait times, and improve customer experience.\n
-• Fixed and improved the UI of the restaurant page, making tables and layouts more user-friendly.\n
-• Created the “Participating Restaurants” page, showcasing different types of restaurants like family-owned and popular restaurant chains.\n
-• Improved the UI of the About/Team page, making it clean, readable, and visually appealing.\n
-• Collaborated with backend developers to integrate APIs and optimize performance.\n
-• Followed accessibility and performance best practices (Lighthouse, Web Vitals).\n
-• Tech Stack: React.js, Next.js, Tailwind CSS, Git.`}
+            • Fixed and improved the UI of the restaurant page, making tables and layouts more user-friendly.\n
+            • Created the “Participating Restaurants” page, showcasing different types of restaurants like family-owned and popular restaurant chains.\n
+            • Improved the UI of the About/Team page, making it clean, readable, and visually appealing.\n
+            • Collaborated with backend developers to integrate APIs and optimize performance.\n
+            • Followed accessibility and performance best practices (Lighthouse, Web Vitals).\n
+            • Tech Stack: React.js, Next.js, Tailwind CSS, Git.`}
         </p>
         <a
           href="/Letter of Exp_Mansha.pdf"
