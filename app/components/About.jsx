@@ -27,17 +27,17 @@ const About = () => {
                     <p className="mb-4 max-w-2xl Ovo leading-relaxed text-gray-700 mx-auto md:mx-0">
                         Hi, I’m <span className="font-semibold text-gray-900">Mansha Vatsh</span>, currently studying at
                         <span className="font-semibold text-gray-900"> Gautam Buddha University</span>.
-                        I’ve explored the <span className="font-semibold">MERN stack</span> and created projects like
-                        <span className="italic"> Wanderlust</span>, <span className="italic">QuickStay</span>, and
+                        I’ve explored the <span className="font-semibold">MERN stack</span> and built projects like
+                        <span className="italic"> WanderNest</span>, <span className="italic"> QuickStay</span>, and
                         <span className="italic"> UberGo</span>.
-                        During my internship at
+                        I’m currently working as a <span className="font-semibold text-gray-900">Frontend Intern at ReserveOcean Ltd.</span>,
+                        a UK-based hospitality tech company, where I build responsive React components, improve UI clarity,
+                        and collaborate with design and backend teams on live production features.
+                        Previously, at
                         <span className="font-semibold text-gray-900"> Concrete Software Solutions Pvt. Ltd.</span>,
-                        I worked on the <span className="font-semibold">Let Us Nudge</span> website — a smart platform
-                        that helps restaurants maximize seating, reduce wait times, and create smoother dining experiences.
-                        This experience gave me the chance to apply my skills to a live project, collaborate with
-                        professionals, and see how technology can directly improve people’s everyday lives.
+                        I contributed to the <span className="font-semibold">Let Us Nudge</span> platform by improving key restaurant pages
+                        and overall usability.
                     </p>
-
 
                     <ul className='flex flex-wrap gap-6 justify-center md:justify-start'>
                         {infoList.map(({ icon, title, description }, index) => (

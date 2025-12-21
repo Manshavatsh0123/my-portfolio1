@@ -2,7 +2,7 @@
 import React from 'react'
 import { BsFillHandIndexFill } from 'react-icons/bs'
 import { FaJava } from 'react-icons/fa';
-import { SiBootstrap, SiExpress, SiJavascript, SiMongodb, SiMysql, SiNextdotjs, SiNodedotjs, SiReact, SiTailwindcss } from 'react-icons/si'
+import { SiBootstrap, SiExpress, SiJavascript, SiMongodb, SiMysql, SiNextdotjs, SiNodedotjs, SiReact, SiTailwindcss, SiGreensock, SiFramer } from 'react-icons/si'
 import Tilt from 'react-parallax-tilt';
 
 const skills = [
@@ -43,10 +43,19 @@ const skills = [
         icon: <SiBootstrap className="text-purple-500" />
     },
     {
+        name: "GSAP",
+        icon: <SiGreensock className="text-green-600" />
+    },
+    {
+        name: "Framer Motion",
+        icon: <SiFramer className="text-pink-500" />
+    },
+    {
         name: "Java",
         icon: <FaJava className="text-red-500" />
     },
 ];
+
 
 
 const Skills = () => {

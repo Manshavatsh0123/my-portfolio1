@@ -36,6 +36,7 @@ import right_arrow from './right-arrow.png';
 import send_icon from './send-icon.png';
 import right_arrow_bold from './right-arrow-bold.png';
 import right_arrow_bold_dark from './right-arrow-bold-dark.png';
+import InternshipProject from './Internship1.png';
 
 export const assets = {
     user_image,
@@ -80,19 +81,19 @@ export const assets = {
 
 export const workData = [
   {
-    title: 'QuickStay',
-    description: 'Hotel Booking App (React)',
-    bgImage: '/Work3.png', 
+    title: 'ReserveOcean',
+    description: 'Frontend Internship',
+    bgImage: InternshipProject,
+  },
+  {
+    title: 'Let Us Nudge',
+    description: 'MERN Stack Internship',
+    bgImage: '/Work1.png', 
   },
   {
     title: 'Wanderlust',
     description: 'MERN Stack Project',
     bgImage: '/Work2.png', 
-  },
-  {
-    title: 'Internship Project',
-    description: 'Let Us Nudge Website',
-    bgImage: '/Work1.png', 
   },
 ];
 
